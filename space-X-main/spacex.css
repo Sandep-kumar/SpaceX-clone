@@ -1,0 +1,211 @@
+.navbar-nav a {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#navbarNav .navbar-nav li a {
+  -webkit-transition: opacity 0.6s linear;
+  transition: opacity 0.6s linear;
+}
+
+ul li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 4px 0;
+  transition: 0.5s;
+}
+ul li a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 100%;
+  left: 0;
+  background: white;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar-custom {
+  background-color: black;
+}
+
+.card {
+  border-style: none !important;
+}
+
+a:active,
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:not(.hover-none):hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+#navbarNav {
+  padding-left: 80px;
+  padding-top: 5px;
+}
+
+.nav-item #shop {
+  padding-left: 250px;
+}
+
+a {
+  cursor: pointer;
+}
+
+a.btn {
+  position: relative;
+  min-width: 130px;
+  min-height: 50px;
+  padding: 0 15px;
+  margin: 30px 0 0;
+  border: 2px solid #fff;
+}
+
+a:active,
+a:link,
+a:visited {
+  color: #fff;
+}
+
+.text {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(255, 248, 248);
+  transition: color ease 0.3s;
+}
+
+.text::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 5%;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  transition: all ease 0.3s;
+}
+
+.text:hover {
+  color: white;
+}
+
+.text:hover::after {
+  height: 100%;
+}
+
+#row1 .col-6 {
+  color: white;
+  margin-top: 10%;
+  padding-left: 200px;
+  margin-bottom: 50px;
+}
+
+#row1 .col-6 .h5 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+#row1 .col-6 .h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+#row2 .col-6 {
+  color: white;
+  margin-top: 250px;
+}
+
+#row3 .col-6 {
+  color: white;
+  margin-top: 350px;
+}
+
+#row4 .col-6 {
+  color: white;
+  margin-top: 250px;
+}
+
+#row5 .col-6 {
+  color: white;
+  margin-top: 350px;
+}
+
+#row6 .col-6 {
+  color: white;
+  margin-top: 350px;
+}
+
+.wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hover {
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+#hover span {
+  position: relative;
+  z-index: 2;
+}
+
+#hover:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  transition: all 0.35s;
+}
+
+#hover:hover {
+  color: rgb(0, 0, 0);
+}
+
+#hover:hover:after {
+  width: 100%;
+}
